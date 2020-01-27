@@ -1,0 +1,11 @@
+def occurence(sen):
+    count=dict()
+    words=sen.split()
+    for x in words:
+        if x in count:
+            count[x]+=1
+        else:
+            count[x]=1
+    print(count)
+sen=str(input(""))
+occurence(sen)

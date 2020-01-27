@@ -1,0 +1,15 @@
+program for finding binary of decimal and palindrome of binary
+def palin(num):
+    binary=bin(num)
+    binary=binary[2:]
+    if len(binary)<4:
+        n="0"
+        binary=n+binary
+        print(binary)
+    else:
+        binary=binary[:4]
+        print(binary)
+    l=lambda bina:"Yes" if bina==bina[-1::-1] else "no"
+    print(l(binary))
+num=int(input())
+palin(num)
